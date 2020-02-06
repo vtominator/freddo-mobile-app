@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.EventFragment">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:background="@drawable/roundedbutton"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/topRelative"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/white_grey_border_bottom">
+
+            <TextView
+                android:fontFamily="@font/light"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvfrgEventName"
+                android:lines="1"
+                android:textStyle="bold"
+                android:text="RandomEventNév"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"/>
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/tvfrgLOC"
+                android:layout_below="@id/tvfrgEventName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/ic_location"
+                android:backgroundTint="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvfrgLocation"
+                android:layout_below="@id/tvfrgEventName"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/tvfrgLOC"
+                android:layout_toEndOf="@id/tvfrgLOC"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/tvfrgDATE"
+                android:layout_below="@id/tvfrgLOC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/ic_time"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvfrgEventDate"
+                android:layout_below="@id/tvfrgLocation"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/tvfrgDATE"
+                android:layout_toEndOf="@id/tvfrgDATE"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/botRelative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_grey_border_top"
+            android:layout_below="@id/topRelative">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:id="@+id/tvfrgEventDescription"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpfrgPictures"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/tvCancel">
+            </android.support.v4.view.ViewPager>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:id="@+id/tvCancel"
+                android:text="@string/cancel"
+                android:paddingBottom="10dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

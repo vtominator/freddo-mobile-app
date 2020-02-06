@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- APP NAME -->
+
+    <string name="app_name">freddo</string>
+    <string name="favorites">Kedvencek</string>
+
+
+    <!-- SETTINGS -->
+
+    <string name="name">Teljes név" "</string>
+    <string name="username">Felhasználónév" "</string>
+
+    <string name="profile_settings">Profil módosítása" "</string>
+    <string name="change_email">Email módosítása" "</string>
+    <string name="change_password">Jelszó módosítása" "</string>
+    <string name="delete_user">Felhasználó törlése" "</string>
+
+    <string name="email">Email cím" "</string>
+    <string name="email_again">Email cím megerősítése" "</string>
+    <string name="old_email">Jelenlegi email" "</string>
+    <string name="new_email">Új email" "</string>
+    <string name="new_email_again">Új email megerősítése" "</string>
+
+
+    <string name="password">Jelszó" "</string>
+    <string name="password_again">Jelszó megerősítése" "</string>
+    <string name="old_password">Jelenlegi jelszó" "</string>
+    <string name="new_password">Új jelszó" "</string>
+
+    <string name="warning">A mező bepipálásával megerősítheti profiljának törlési szándékát!</string>
+
+    <!-- BUTTONS -->
+
+
+    <string name="login">Belépés" "</string>
+    <string name="stayloggedin">Maradjon bejelentkezve</string>
+    <string name="signup">Regisztráció " "</string>
+    <string name="add">Hozzáadás</string>
+    <string name="date">Nap kiválasztása</string>
+    <string name="time">Időpont kiválasztása</string>
+    <string name="cancel">Mégsem</string>
+
+    <!-- MENU -->
+
+    <string name="search">Keresés</string>
+    <string name="profile">Profil</string>
+    <string name="settings">Beállítások</string>
+    <string name="logout">Kilépés</string>
+
+    <!-- EVENT -->
+
+    <string name="add_event">Esemény hozzáadása</string>
+    <string name="event_name">Esemény neve</string>
+    <string name="event_location">Esemény helye</string>
+    <string name="event_day">Esemény napja</string>
+    <string name="event_time">Esemény időpontja</string>
+    <string name="event_type">Esemény típusa</string>
+    <string name="description">Esemény leírása</string>
+
+
+    <string name="festival">fesztivál</string>
+    <string name="concert">koncert</string>
+    <string name="performance">előadás</string>
+    <string name="event">rendezvény</string>
+    <string name="deal">akció</string>
+    <string name="free">ingyenes</string>
+    <string name="OP">Szervező:</string>
+    <string name="LOC">@</string>
+    <string name="DATE">-</string>
+
+    <!-- FRAGMENT -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_events">Saját események</string>
+
+    <!-- SPINNER -->
+
+    <string name="event_sort">Események rendezése: </string>
+
+    <string-array name="sort">
+        <item>Név szerint</item>
+        <item>Idő szerint növekvő</item>
+        <item>Idő szerint csökkenő</item>
+        <item>Kedvelések alapján csökkenő</item>
+        <item>Kedvelések alapján növekvő</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:id="@+id/homeContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.ActivityHome">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        app:menu="@menu/home_menu">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/spinLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topToolbar"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+
+
+        <TextView
+            android:id="@+id/spinnerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/light"
+            android:text="@string/event_sort"
+            android:textStyle="italic" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+    </LinearLayout>
+    <CheckBox
+        android:layout_below="@id/spinLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Csak az inatkív események mutatása"
+        android:id="@+id/onlyActives"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/onlyActives"
+        android:layout_alignParentBottom="true"
+        android:padding="4dp"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="#8000"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="25dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/add_event"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tvEventNameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/light"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/event_name"
+                    android:textColor="@color/white"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/etEventName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/roundedbutton"
+                    android:fontFamily="@font/regular"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/tvEventLocationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/light"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/event_location"
+                    android:textColor="@color/white"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:id="@+id/etEventLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/roundedbutton"
+                    android:ems="10"
+                    android:fontFamily="@font/regular"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvEventDateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/light"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/event_day"
+                    android:textColor="@color/white"
+                    android:textStyle="italic" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bDate"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/roundedbutton"
+                        android:backgroundTint="@color/orange"
+                        android:text="@string/date"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tvEventDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:autoSizeMaxTextSize="50sp"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@drawable/roundedbutton"
+                        android:ems="10"
+                        android:fontFamily="@font/regular"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvEventTimeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/light"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/event_time"
+                    android:textColor="@color/white"
+                    android:textStyle="italic" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/bTime"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/roundedbutton"
+                        android:backgroundTint="@color/orange"
+                        android:text="@string/time"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tvEventTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:autoSizeMaxTextSize="50sp"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeStepGranularity="2sp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@drawable/roundedbutton"
+                        android:ems="10"
+                        android:fontFamily="@font/regular"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvEventTypeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/light"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/event_type"
+                    android:textColor="@color/white"
+                    android:textStyle="italic" />
+
+
+                <GridLayout
+                    android:id="@+id/gridBoxes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+                    <CheckBox
+                        android:id="@+id/cbFestival"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/orange"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/festival"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/cbConcert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/orange"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/concert"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/cbPerformance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/orange"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/performance"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/cbEvent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/orange"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/event"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/cbDeal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/orange"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/deal"
+                        android:textColor="@color/white" />
+
+                    <CheckBox
+                        android:id="@+id/cbFree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/orange"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/free"
+                        android:textColor="@color/white" />
+
+                </GridLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvEventDescriptionTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/light"
+                        android:paddingStart="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/description"
+                        android:textColor="@color/white"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/tvCharCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/roundedbutton"
+                    android:fontFamily="@font/regular"
+                    android:gravity="top"
+                    android:imeOptions="actionSend"
+                    android:inputType="textMultiLine"
+                    android:maxLength="250"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/bAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/roundedbutton"
+                    android:backgroundTint="@color/orange"
+                    android:paddingTop="10dp"
+                    android:text="@string/add"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
